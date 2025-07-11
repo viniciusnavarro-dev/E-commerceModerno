@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore - Tecnologia Premium</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <h1>TechStore</h1>
+                    <span>Premium Tech</span>
+                </div>
+                
+                <nav class="nav-menu" id="navMenu">
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#products">Produtos</a></li>
+                        <li><a href="#featured">Destaques</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="header-actions">
+                    <div class="search-box">
+                        <input type="text" placeholder="Buscar produtos...">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="cart-icon" id="cartIcon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </div>
+                    <div class="menu-toggle" id="menuToggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h2>Oferta Especial</h2>
+                <h1>Smartphones Premium</h1>
+                <p>Até <span class="highlight">50% OFF</span> em produtos selecionados</p>
+                <div class="hero-cta">
+                    <button class="btn-primary">Comprar Agora</button>
+                    <div class="urgency-timer">
+                        <i class="fas fa-clock"></i>
+                        <span>Oferta termina em: <strong id="countdown">23:59:45</strong></span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="/placeholder.svg?height=400&width=400" alt="Smartphone Premium">
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section" id="products">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nossos Produtos</h2>
+                <p>Tecnologia de ponta para você</p>
+            </div>
+            
+            <div class="products-grid" id="productsGrid">
+                <!-- Products will be loaded here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Section -->
+    <section class="featured-section" id="featured">
+        <div class="container">
+            <div class="section-header">
+                <h2>Mais Vendidos</h2>
+                <p>Os produtos favoritos dos nossos clientes</p>
+            </div>
+            
+            <div class="featured-grid" id="featuredGrid">
+                <!-- Featured products will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h3>Fique por dentro das novidades</h3>
+                <p>Receba ofertas exclusivas e lançamentos em primeira mão</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Seu melhor e-mail" required>
+                    <button type="submit" class="btn-primary">Inscrever-se</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <h3>TechStore</h3>
+                        <p>Sua loja de tecnologia premium</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> (11) 9999-9999</p>
+                        <p><i class="fas fa-envelope"></i> contato@techstore.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> São Paulo, SP</p>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Atendimento</h4>
+                    <ul>
+                        <li><a href="#">Central de Ajuda</a></li>
+                        <li><a href="#">Trocas e Devoluções</a></li>
+                        <li><a href="#">Garantia</a></li>
+                        <li><a href="#">Fale Conosco</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Formas de Pagamento</h4>
+                    <div class="payment-methods">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-paypal"></i>
+                        <i class="fas fa-barcode"></i>
+                        <i class="fab fa-pix"></i>
+                    </div>
+                    <div class="security-badges">
+                        <span>🔒 Compra Segura</span>
+                        <span>✓ SSL Certificado</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 TechStore. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h3>Seu Carrinho</h3>
+                <button class="close-cart" id="closeCart">&times;</button>
+            </div>
+            <div class="cart-items" id="cartItems">
+                <p class="empty-cart">Seu carrinho está vazio</p>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <strong>Total: R$ <span id="cartTotal">0,00</span></strong>
+                </div>
+                <button class="btn-primary checkout-btn">Finalizar Compra</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
